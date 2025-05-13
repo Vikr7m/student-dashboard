@@ -1,0 +1,894 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #fff;
+    height: 55px; /* Further adjusted height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; /* Further adjusted padding */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .college {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Further adjusted gap */
+  }
+  
+  .photo {
+    height: 30px; /* Further adjusted logo size */
+    width: 30px;
+  }
+  
+  .photo img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  .name h1 {
+    font-size: 0.9rem; /* Further adjusted font size */
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  
+  .name p {
+    font-size: 0.7rem; /* Further adjusted font size */
+    color: #666;
+    margin: 0;
+  }
+  
+  .icon1 {
+    padding-right: 10px;
+    color: #555;
+  }
+  
+  .icon1 svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    padding-top: 10px;
+  }
+  
+  .sidebar {
+    width: 120px; /* Further adjusted sidebar width */
+    background-color: #fff;
+    box-shadow: 1px 0 1px rgba(0, 0, 0, 0.05);
+    padding-top: 10px;
+    height: fit-content;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 8px 10px; /* Further adjusted padding */
+    border-radius: 3px;
+    color: #444;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    margin-bottom: 2px; /* Further adjusted margin */
+    font-size: 0.8rem; /* Further adjusted font size */
+  }
+  
+  .sidebar li:hover,
+  .sidebar li.active {
+    background-color: #0D4F45;
+    color: #fff;
+  }
+  
+  .insidehero {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    width: calc(100% - 120px); /* Further adjusted width */
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  /* Announcement Box */
+  .announcement-box {
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px; /* Further adjusted padding */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  }
+  
+  .announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .announcement-header h3 {
+    margin: 0;
+    font-size: 0.8rem; /* Further adjusted font size */
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .announcement-header a {
+    font-size: 0.7rem; /* Further adjusted font size */
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .announcement-card {
+    display: flex;
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 6px 8px; /* Further adjusted padding */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  
+  .announcement-card img {
+    width: 25px; /* Further adjusted image size */
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+  }
+  
+  .announcement-content {
+    flex-grow: 1;
+  }
+  
+  .announcement-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  
+  .announcement-title-row h4 {
+    margin: 0;
+    color: #0D4F45;
+    font-size: 0.7rem; /* Further adjusted font size */
+    font-weight: 700;
+  }
+  
+  .announcement-date {
+    color: #0D4F45;
+    font-size: 0.6rem; /* Further adjusted font size */
+    font-weight: 500;
+  }
+  
+  .announcement-content p {
+    margin: 1px 0 0;
+    font-size: 0.6rem; /* Further adjusted font size */
+    color: #555;
+  }
+  
+  /* Overview Section */
+  .overview {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .cgpa-card {
+    width: 120px; /* Further adjusted card width */
+    padding: 8px; /* Further adjusted padding */
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    position: relative;
+  }
+  
+  .cgpa-label {
+    font-size: 0.6rem; /* Further adjusted font size */
+    font-weight: 500;
+    margin: 0 0 2px;
+    color: #555;
+  }
+  
+  .cgpa-value {
+    font-size: 1rem; /* Further adjusted font size */
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+  }
+  
+  .cgpa-subtext {
+    font-size: 0.6rem; /* Further adjusted font size */
+    margin: 1px 0 0;
+    color: #666;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: #0D4F45;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 18px; /* Further adjusted button size */
+    height: 18px;
+    font-size: 0.7rem; /* Further adjusted font size */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+  }
+  
+  /* Subjects Section */
+  .subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 6px 0;
+  }
+  
+  .subjects p {
+    font-size: 0.8rem; /* Further adjusted font size */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
+  }
+  
+  .class-schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Further adjusted minmax */
+    gap: 6px;
+    padding: 0;
+  }
+  
+  .class-info-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 6px; /* Further adjusted padding */
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  }
+  
+  .info-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .course-code {
+    font-size: 0.8rem; /* Further adjusted font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1px;
+  }
+  
+  .course-name {
+    color: #1b1b1b;
+    font-size: 0.65rem; /* Further adjusted font size */
+    margin-bottom: 2px;
+  }
+  
+  .instructor {
+    color: #555;
+    font-size: 0.55rem; /* Further adjusted font size */
+  }
+  
+  .info-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .expand-icon {
+    background-color: #1a734e;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px; /* Further adjusted padding */
+    width: 16px; /* Further adjusted icon size */
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(135deg);
+  }
+  
+  .expand-icon svg {
+    width: 10px; /* Further adjusted icon size */
+    height: 10px;
+  }
+  
+  /* Side Section */
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px; /* Further adjusted side width */
+  }
+  
+  .profile-card {
+    display: flex;
+    gap: 8px; /* Further adjusted gap */
+    padding: 10px; /* Further adjusted padding */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  
+  .profile-photo {
+    height: 35px; /* Further adjusted photo size */
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Further adjusted gap */
+  }
+  
+  .profile-content h1 {
+    font-size: 0.8rem; /* Further adjusted font size */
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .profile-card p {
+    font-size: 0.6rem; /* Further adjusted font size */
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Time Table */
+  .time-table {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    padding: 10px; /* Further adjusted padding */
+  }
+  
+  .month-year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  
+  .month-year h1 {
+    font-size: 0.8rem; /* Further adjusted font size */
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .calendar-week {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px 0; /* Further adjusted padding */
+    border-radius: 3px;
+  }
+  
+  .calendar-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 4px; /* Further adjusted padding */
+  }
+  
+  .day-name {
+    font-size: 0.5rem; /* Further adjusted font size */
+    margin-bottom: 1px;
+    color: #555;
+  }
+  
+  .day-number {
+    font-size: 0.7rem; /* Further adjusted font size */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .calendar-day.selected {
+    background-color: #1a734e;
+    border-radius: 3px;
+    color: #fff;
+  }
+  
+  /* Schedule */
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  
+  .schedule-header h1 {
+    font-size: 0.8rem; /* Further adjusted font size */
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .schedule-header p {
+    font-size: 0.6rem; /* Further adjusted font size */
+    color: #555;
+    margin: 0;
+  }
+  
+  .schedule-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Further adjusted gap */
+  }
+  
+  .class-schedule-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 4px; /* Further adjusted padding */
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+  
+  .item-number {
+    font-size: 1rem; /* Further adjusted font size */
+    font-weight: bold;
+    color: #333;
+    margin-right: 8px; /* Further adjusted margin */
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  .item-details {
+    flex-grow: 1;
+  }
+  
+  .item-details .course-code {
+    font-size: 0.7rem; /* Further adjusted font size */
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0px;
+  }
+  
+  .item-details .course-name {
+    color: #555;
+    font-size: 0.55rem; /* Further adjusted font size */
+  }
+  
+  .item-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #777;
+    font-size: 0.5rem; /* Further adjusted font size */
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  .time-separator {
+    margin: 1px 0;
+    font-size: 0.4rem;
+  }
+  
+  .start-time,
+  .end-time {
+    line-height: 1.2;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .insidehero {
+      width: calc(100% - 100px); /* Further adjusted sidebar width */
+    }
+  
+    .sidebar {
+      width: 100px;
+    }
+  
+    .announcement-box {
+      width: 99%;
+    }
+  
+    .overview {
+      flex-wrap: wrap;
+    }
+  
+    .cgpa-card {
+      width: calc(50% - 6px);
+    }
+  
+    .side {
+      width: 220px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .insidehero {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 6px;
+    }
+  
+    .sidebar ul {
+      display: flex;
+    }
+  
+    .sidebar li {
+      margin-right: 6px;
+    }
+  
+    .main {
+        padding: 8px;
+  }
+
+  .side {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .profile-card {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .cgpa-card {
+    width: 100%;
+  }
+
+  .college {
+    flex-direction: row; /* Keep logo and name in a row on smaller tablets */
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .name h1 {
+    font-size: 0.8rem;
+  }
+
+  .name p {
+    font-size: 0.6rem;
+  }
+
+  .icon1 {
+    padding-right: 10px;
+  }
+
+  .icon1 svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .sidebar {
+    font-size: 0.7rem;
+    padding-top: 10px;
+  }
+
+  .sidebar li {
+    padding: 6px 8px;
+    margin-right: 4px;
+  }
+
+  .announcement-header h3 {
+    font-size: 0.7rem;
+  }
+
+  .announcement-header a {
+    font-size: 0.6rem;
+  }
+
+  .announcement-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .announcement-card img {
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+
+  .announcement-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .announcement-title-row h4 {
+    font-size: 0.7rem;
+    margin-bottom: 1px;
+  }
+
+  .announcement-date {
+    font-size: 0.5rem;
+  }
+
+  .announcement-content p {
+    font-size: 0.5rem;
+  }
+
+  .cgpa-label {
+    font-size: 0.6rem;
+  }
+
+  .cgpa-value {
+    font-size: 0.9rem;
+  }
+
+  .cgpa-subtext {
+    font-size: 0.6rem;
+  }
+
+  .arrow-button {
+    width: 16px;
+    height: 16px;
+    font-size: 0.6rem;
+    bottom: 6px;
+    right: 6px;
+  }
+
+  .subjects p {
+    font-size: 0.7rem;
+  }
+
+  .class-schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .class-info-card {
+    padding: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-code {
+    font-size: 0.7rem;
+  }
+
+  .course-name {
+    font-size: 0.6rem;
+  }
+
+  .instructor {
+    font-size: 0.5rem;
+  }
+
+  .info-right {
+    margin-top: 5px;
+  }
+
+  .item-number {
+    font-size: 0.9rem;
+    margin-right: 6px;
+  }
+
+  .item-details .course-code {
+    font-size: 0.7rem;
+  }
+
+  .item-details .course-name {
+    font-size: 0.6rem;
+  }
+
+  .item-time {
+    font-size: 0.5rem;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .profile-photo {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 5px;
+  }
+
+  .profile-content h1 {
+    font-size: 0.7rem;
+  }
+
+  .profile-card p {
+    font-size: 0.6rem;
+  }
+
+  .month-year h1 {
+    font-size: 0.7rem;
+  }
+
+  .calendar-week {
+    padding: 4px;
+  }
+
+  .day-name {
+    font-size: 0.4rem;
+    margin-bottom: 1px;
+  }
+
+  .day-number {
+    font-size: 0.6rem;
+  }
+
+  .schedule-header h1 {
+    font-size: 0.7rem;
+  }
+
+  .schedule-header p {
+    font-size: 0.5rem;
+  }
+
+  .class-schedule-item {
+    padding: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-number {
+    font-size: 0.8rem;
+    margin-right: 4px;
+  }
+
+  .item-details .course-code {
+    font-size: 0.7rem;
+  }
+
+  .item-details .course-name {
+    font-size: 0.6rem;
+  }
+
+  .item-time {
+    font-size: 0.5rem;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .college h1 {
+    font-size: 0.7rem;
+  }
+
+  .college p {
+    font-size: 0.5rem;
+  }
+
+  .icon1 svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .sidebar {
+    font-size: 0.6rem;
+    padding-top: 8px;
+  }
+
+  .sidebar li {
+    padding: 4px 6px;
+    margin-right: 2px;
+  }
+
+  .announcement-header h3 {
+    font-size: 0.6rem;
+  }
+
+  .announcement-content p {
+    font-size: 0.4rem;
+  }
+
+  .cgpa-value {
+    font-size: 0.8rem;
+  }
+
+  .subjects p {
+    font-size: 0.6rem;
+  }
+
+  .item-number {
+    font-size: 0.7rem;
+    margin-right: 4px;
+  }
+
+  .course-code {
+    font-size: 0.6rem;
+  }
+
+  .course-name {
+    font-size: 0.5rem;
+  }
+
+  .instructor {
+    font-size: 0.4rem;
+  }
+
+  .item-time {
+    font-size: 0.4rem;
+  }
+
+  .profile-content h1 {
+    font-size: 0.6rem;
+  }
+
+  .profile-card p {
+    font-size: 0.5rem;
+  }
+
+  .month-year h1 {
+    font-size: 0.6rem;
+  }
+
+  .calendar-week {
+    padding: 3px;
+  }
+
+  .day-name {
+    font-size: 0.3rem;
+  }
+
+  .day-number {
+    font-size: 0.5rem;
+  }
+
+  .schedule-header h1 {
+    font-size: 0.6rem;
+  }
+
+  .schedule-header p {
+    font-size: 0.4rem;
+  }
+
+  .item-details .course-code {
+    font-size: 0.6rem;
+  }
+
+  .item-details .course-name {
+    font-size: 0.4rem;
+  }
+}
