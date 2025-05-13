@@ -1,0 +1,474 @@
+/* Responsive styles for PC screens */
+@media (min-width: 1024px) {
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #F8F9FA;
+    margin: 0;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+
+  .college {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .college h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .photo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon1 {
+    padding-right: 40px;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    width: 200px;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    padding-top: 20px;
+    background-color: #ffffff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    border-radius: 8px;
+  }
+  
+  .sidebar a {
+    display: block;
+    text-decoration: none; /* remove underline */
+    color: #333;            /* base text color */
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .sidebar a:hover {
+    background-color: #C3EFE5;
+    color: #0D4F45;
+  }
+  
+  .sidebar a.active {
+    background-color: #0D4F45; /* light greenish highlight */
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .hero {
+    display: flex;
+    width: 100%;
+  }
+
+  .main-hero {
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+    width: calc(100% - 200px); /* Adjust width for sidebar */
+  }
+
+  .overall {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .overall h1 {
+    font-size: 18px; /* Slightly larger heading */
+    font-weight: 600;
+  }
+
+  .overall-cont {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; /* Align items to the start for better flow */
+    align-items: center;
+  }
+
+  .cont-1 {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Slightly more prominent shadow */
+    display: flex;
+    gap: 60px; /* Increased gap */
+    padding: 40px;
+    height: fit-content;
+    width: 65%;
+    background-color: #ffffff;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  :root {
+    --percentage: 80;
+    --circumference: 565.48;
+    --progress: calc(var(--circumference) * (100 - var(--percentage)) / 100);
+  }
+
+  .progress-ring-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px; /* Slightly larger ring */
+    width: 120px;
+  }
+
+  .progress-ring {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  .progress-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: none;
+  }
+
+  .progress-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: none;
+    mask: radial-gradient(farthest-side, transparent calc(100% - 16px), black 0);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 16px), black 0);
+    background-color: #b3b3b3;
+  }
+
+  .progress-circle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: none;
+    mask: radial-gradient(farthest-side, transparent calc(100% - 16px), black 0);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 16px), black 0);
+    background: conic-gradient(#0f5c50 calc(3.6deg * var(--percentage)), transparent 0deg);
+    transform: rotate(0deg);
+  }
+
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px; /* Larger text */
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .total-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F9FA;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px; /* Slightly wider */
+    height: 120px; /* Slightly taller */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .total-hours h1 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Outfit' sans-serif;
+  }
+
+  .total-hours p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Outfit' sans-serif;
+  }
+
+  .pres-abs {
+    display: flex;
+    flex-direction: column; /* Display present and absent side by side */
+    gap: 20px;
+  }
+
+  .present {
+    display: flex;
+    align-items: baseline; /* ⬅️ This is the key fix */
+    gap: 8px;
+    justify-content: space-between;
+    background-color: #F8F9FA;
+    width: 180px;
+    height: 60px;
+    padding: 0 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+  }
+  
+  .present p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .present h1 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  
+
+  .cont-2 {
+    width: 30%;
+    height: fit-content;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  /* Reset heading styles to remove unwanted spacing */
+  .cont-2 h1,
+  .date h1,
+  .cc h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  /* Date section */
+  .date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .from, .to {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .from h1,
+  .to h1 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+  }
+  
+  .from p,
+  .to p,
+  .cc p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0D4F45;
+    margin: 0;
+  }
+  .from p,
+  .to p{
+    margin-top: 30px;
+  }
+  
+  /* Class Coordinator */
+  .cc {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .cc h1 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+  }
+  
+  .mail,
+  .docs {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mail {
+    background-color: #0D4F45;
+    color: white;
+  }
+  
+  .docs {
+    background-color: white;
+    color: #0D4F45;
+    border: 1px solid #0D4F45;
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 768px) {
+    .cont-2 {
+      width: 90%;
+    }
+  
+    .date {
+      flex-direction: column;
+    }
+  
+    .from, .to {
+      width: 100%;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .mail, .docs {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  .main-hero h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px; /* Add some top margin */
+  }
+
+  .sub-wise-containers {
+    display: flex;
+    flex-wrap: wrap; /* Allow subjects to wrap to the next line */
+    gap: 20px;
+  }
+
+  .row {
+    display: flex;
+    gap: 20px;
+    width: 100%; /* Make rows take full width */
+  }
+
+  .sub {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: calc(33% - 20px); /* Display approximately 3 subjects per row */
+    min-width: 300px; /* Ensure a minimum width for each subject box */
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .sub h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .sub h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555; /* Slightly lighter color for subject name */
+  }
+
+  .innersub {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .tot-pre-abs {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0D4F45;
+  }
+
+  .attendance-percentage {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .attendance-percentage h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0D4F45;
+  }
+
+  .progress-container {
+    width: 180px;
+    height: 10px;
+    background-color: #c4c4c4;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 100%;
+    width: 70%;
+    background-color: #0D4F45;
+    border-radius: 6px;
+    transition: width 0.4s ease;
+  }
+}
+
+/* Default styles (applied unless overridden by the media query) */
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #F8F9FA;
+}
